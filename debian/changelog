@@ -1,0 +1,9 @@
+lamerpad (0.1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Anthony Wong <ypwong@debian.org>  Sun, 28 Nov 1999 18:19:06 +0800
+
+Local variables:
+mode: debian-changelog
+End:

@@ -1,0 +1,10 @@
+XCOMM IMserver Developers Kit Imakefile,v 1.2 94/02/10 22:18:48 tajima Exp $
+#define IHaveSubdirs
+XCOMM #define PassCDebugFlags CDEBUGFLAGS="$(CDEBUGFLAGS)"
+#define PassCDebugFlags CDEBUGFLAGS="-O2"
+
+#SUBDIRS = IMdkit Xi18n_sample Ximp_sample
+SUBDIRS = lib IMdkit
+
+MakeSubdirs($(SUBDIRS))
+DependSubdirs($(SUBDIRS))

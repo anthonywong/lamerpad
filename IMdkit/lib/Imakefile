@@ -1,0 +1,40 @@
+XCOMM $TOG: Imakefile /main/39 1997/02/26 18:09:44 kaleb $
+#define IHaveSubdirs
+#define PassCDebugFlags
+
+#ifndef NeedBerklib
+#define NeedBerklib NO
+#endif
+
+#if NeedBerklib
+BERKDIR = Xbsd
+#endif
+
+#if BuildXKBlib
+XKBLIBDIR = xkbfile
+#endif
+
+#if BuildLBX
+LBXUTILDIR = lbxutil
+#endif
+
+#if (BuildLBX || GzipFontCompression) && !HasZlib
+ZLIBDIR = zlib
+#endif
+
+#if BuildXAudio
+XALIBDIR = Xa
+#endif
+
+LINTSUBDIRS = Xau Xdmcp X11 oldX ICE SM Xext Xt Xmu Xaw XIE Xi \
+              Xtst FS PEX5 $(XKBLIBDIR) $(LBXUTILDIR) $(XALIBDIR) \
+              Xp $(ZLIBDIR)
+
+#SUBDIRS = $(BERKDIR) xtrans $(LINTSUBDIRS) font
+SUBDIRS = xtrans
+
+MakeSubdirs($(SUBDIRS))
+DependSubdirs($(SUBDIRS))
+MakeLintLibSubdirs($(LINTSUBDIRS))
+MakeLintSubdirs($(LINTSUBDIRS),install.ln,install.ln)
+

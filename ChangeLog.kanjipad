@@ -1,0 +1,29 @@
+Wed Mar 31 02:37:07 1999  Owen Taylor  <otaylor@redhat.com>
+
+	* v1.2.1 - Makefile cleanups for RPM-ization
+
+	- Move data files to $(prefix)/share
+
+Fri Mar 19 22:36:16 1999  Owen Taylor  <otaylor@redhat.com>
+
+	* v1.2 - updates to GTK 1.2
+
+	- Use ItemFactory, not MenuFactory
+	- Use new GtkTargetEntry style of handling the selection
+	- hack the character labels to get them to display correctly
+	  (GtkLabel is i18n aware, and as a consequence, gets confused
+	   by 16 bit text masquerading as 8 bit text)
+
+1998-04-08  Owen Taylor  <owt1@cornell.edu>
+
+	* v1.0 - updates to GTK 1.0
+	
+199?-??-??  Owen Taylor  <owt1@cornell.edu>
+
+	* v1.0b1
+
+1997-10-27  Owen Taylor  <owt1@cornell.edu>
+
+	* Initial release of KanjiPad. v0.9
+
+

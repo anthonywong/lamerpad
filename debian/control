@@ -1,0 +1,19 @@
+Source: lamerpad
+Build-Depends: xlib6g-dev, libgtk1.2-dev, libc6-dev, libglib1.2-dev
+Section: x11
+Priority: optional
+Maintainer: Anthony Wong <ypwong@debian.org>
+Standards-Version: 3.1.1
+
+Package: lamerpad
+Architecture: any
+Depends: ${shlibs:Depends}, unifont
+Description: Multilingual handwriting input server in X
+ Lamerpad is a multilingual handwriting input server in X, by using it
+ you can input characters into XIM clients (such as rxvt, kterm, GTK+
+ apps, etc) by writing onto lamerpad. No need to use the keyboard any
+ more!
+ . 
+ Currently it supports Traditional Chinese (BIG5), Simplified Chinese
+ (GB2312) and Japanese (EUC-JP), however, there are still many
+ characters not yet in the database.

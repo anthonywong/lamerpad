@@ -1,0 +1,2 @@
+?package(lamerpad):needs=X11 section=XShells\
+  title="lamerpad" command="/usr/bin/lamerpad"
